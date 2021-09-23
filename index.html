@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="estiactividad1p4.css">
+
+</head>
+<body>
+	<div class="fondo"><img src="f1.jpg" height="950px" width="1350px" /></div>
+<div class="p2" id="tema1" onclick="sara()"><center><h1>Cierra</h1></center></div>
+<div class="gr3"id="most3" ></div>
+<div class="cl" id="cerrar" onclick="cerrar()"></div>
+<div class="ns" id="col" onmousemove="foca(event)"> </div>
+<div class="p" onclick="clau()" onmousemove="foca(event)"><center><h1>Abre</h1></center></div>
+<div class="nl" id="co" onmousemove="foca(event)" ></div>
+<div class="gr2"id="most2" ></div>
+<div class="p1" id="tema2" onclick="inf2()"><h1>Neosistemas</h1></div>
+<script type="text/javascript">
+	
+	var n = document.getElementById('co'); 
+	var n1 = document.getElementById('col'); 
+	var n2 = document.getElementById('coca'); 
+	
+	
+	function sara2() 
+	{
+		n1.className = "ns";
+	}
+	function sara1() 
+	{
+		n.className = "ns";
+	}
+	function clau() 
+	{
+		n1.className = "la";
+	}
+	function foca(event) 
+	{
+		var x = event.clientX;
+        var y = event.clientY;
+        if (x>500&&y>200&&x<1099&&y<600) 
+        {
+             document.getElementById("col").innerHTML = "ESTOY DENTRO";
+        }
+        else
+        {
+        	document.getElementById("col").innerHTML = "NO ESTOY DENTRO";
+        }	
+	}
+
+	
+            x=-1;
+	function cerrar() {
+	 x=x+1;
+        most2.style.width=0+"%";
+		most2.style.height=0+"%";
+		most3.style.width=300+"%";
+		most3.style.height=30+"%";
+		clearInterval(crono);
+
+			if (x%2==0) {
+				most3.style.background="Plum";
+				most3.style.width=700+"px";
+				
+			} else{
+				most3.style.width=550+"px";
+				most3.style.background="Fuchsia";
+				
+			}
+			if (x%3==0) {
+				most3.style.background="purple";
+				most3.style.width=300+"px";
+			
+			}
+			
+			if (x==10) {
+				most3.style.background="BlanchedAlmond";
+				most3.style.width=0+"%";
+		        most3.style.height=0+"%";
+				clearInterval(crono);
+				
+		        
+			}
+       
+		}
+
+		crono=setInterval(cerrar,2000);
+		
+
+function inf2() {
+		most2.style.width=900+"px";
+		most2.style.height=1000+"px";
+
+		
+	}
+	
+	function sara() {
+		most2.style.width=0+"%";
+		most2.style.height=0+"%";
+		most3.style.width=0+"%";
+		most3.style.height=0+"%";
+
+		
+		clearInterval(crono);
+		
+	}
+	crono=setInterval(sara,30000);
+
+
+	
+</script>
+</body>
+</html>

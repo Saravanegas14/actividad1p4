@@ -1,0 +1,125 @@
+
+.p1{
+ position: absolute;
+ top: 20px;
+ left:500px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+ opacity: 0.9;
+ transition: transform .4s;
+ opacity: 0.9;
+ text-shadow: 2px 2px #000000;
+   animation-name: ulidos;
+  animation-duration:2s;
+  animation-iteration-count: infinite; 
+  font-size: 30px;
+   
+} 
+@keyframes ulidos{
+ 33%{color: #EC407A ;  } 
+ 66%{color: #AB47BC ;  }
+ 99%{color: #64B5F6   ;  }
+
+  
+}
+
+.gr2{
+	position: absolute;
+	top: 5px;
+	left: 960px;
+	width: 0px;
+	height: 0px;
+	background: #B9B2F2;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	overflow: hidden;
+	font-size: 500%;
+	transition: all 0.5s;
+	background: url(i1.png);
+    background-repeat: no-repeat;
+	
+}
+.p2{
+	position: absolute;
+	top: 500px;
+	left: 90px;
+	width: 200px;
+	height: 100px;
+	background: #B9B2F2;
+	border-radius: 20%;
+	font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+ color:White;
+}
+.gr3{
+	position: absolute;
+	top: 500px;
+	left: 400px;
+	width: 0px;
+	height: 0px;
+	background: #B9B2F2;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	overflow: hidden;
+	font-size: 500%;
+	transition: all 0.5s;
+	
+	
+	
+}
+.cl{
+	position: absolute;
+	top: 10%;
+	left: 93%;
+	width: 2%;
+	height: 5%;
+	border-radius: 50%;
+	background: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	cursor: pointer;
+
+}
+
+	
+	.la
+	{
+		position: absolute;
+		width: 600px;
+		height: 200px;
+		left: 400px;
+		top: 250px;
+		background:#F2B2EB ;
+		text-align: center;
+        font-size: 50px;
+        font-family: Copperplate, Papyrus, fantasy, monospace;
+        border-radius: 10%;
+        color:White;
+	}
+	
+	.p
+	{
+		position: absolute;
+		width: 200px;
+		height: 100px;
+		left: 100px;
+		top: 100px;
+		background:#B9B2F2;
+		border-radius: 20%;
+		 font-family: Copperplate, Papyrus, fantasy, monospace;
+		 color:White;
+
+	}
+	
